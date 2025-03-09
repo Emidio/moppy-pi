@@ -53,7 +53,7 @@ install-kernel:
 	(cd ./linux && make INSTALL_MOD_PATH=../sysroot modules_install)
 	mkdir -p ./sysroot/boot/overlays
 	(cd ./linux && cp arch/arm/boot/zImage ../sysroot/boot/$(KERNEL).img)
-	(cd ./linux && cp arch/arm/boot/dts/*.dtb ../sysroot/boot/.)
+	(cd ./linux && cp arch/arm/boot/dts/*.dtb ../sysroot/boot/. || true))
 	(cd ./linux && cp arch/arm/boot/dts/overlays/*.dtb* ../sysroot/boot/overlays/.)
 	(cd ./linux && cp arch/arm/boot/dts/overlays/README ../sysroot/boot/overlays/.)
 
