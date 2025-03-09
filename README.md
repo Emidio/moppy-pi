@@ -1,11 +1,13 @@
-# Kernel Moppy
+# Kernel Moppy for Raspberry Pi
 
-This is a fork of the great Moppy project from [SammyIAm](https://github.com/SammyIAm/Moppy). The goals of this fork a mainly:
+This is a fork of the great Moppy project from [SammyIAm](https://github.com/SammyIAm/Moppy) - forked again from [wendler]([https://github.com/SammyIAm/Mopp](https://github.com/wendlers/Moppy)) to add some fixed for direct compilation on Raspberry.
+The goals of this fork a mainly:
 
+* to compile the needed kernel directly on raspberry (about 4 hours, need 32bit image)
 * to provide a Linux Kernel module which allows driving floppies directly e.g. from a Raspberry Pi
 * to provide a Python3 library which easily allows playing MIDI files through the floppies
 
-This is work in progress and it is likely that things are changing a lot in future. Also documentation at the moment is very sparse.
+This is work in progress and completely unsupported ;-) Also documentation at the moment is very sparse (.
 
 ![FloppyOrgel](./docs/images/raspi_floppyorgel_2.jpg "Raspberry Pi FloppyOrgel")
 
